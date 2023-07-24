@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Green Garden</string>
+    <string name="back_button_description">Regresar</string>
+    <string name="water">Agua</string>
+    <string name="fertilizer">Abonos</string>
+    <string name="energy">Energía</string>
+    <string name="save">Guardar</string>
+    <!--Forms-->
+    <string name="mail">E-mail</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="link_signup">¿No tienes una cuenta?\nRegístrate aquí.</string>
+    <string name="link_login">Ya tengo una cuenta.\n¡Vamos!</string>
+    <string name="full_name">Nombre y apellido</string>
+    <string name="city">Ciudad</string>
+    <string name="signup">Registrarse</string>
+    <!--Navigation menu-->
+    <string name="menu_home">Home</string>
+    <string name="menu_user">Usuario</string>
+    <string name="menu_logout">Salir</string>
+    <!--Home-->
+    <string name="welcome">Bienvenido</string>
+    <string name="categories">Categorías</string>
+    <string name="stats">Estadísticas</string>
+    <string name="tips">Consejos</string>
+    <!--Register Categories-->
+    <string name="cons_register">Registrar consumos</string>
+    <string name="water_reg_message">Registra tus consumos de agua llenando el siguiente formulario.</string>
+</resources>

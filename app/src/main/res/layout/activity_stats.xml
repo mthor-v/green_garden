@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".StatsActivity">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/analytics" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="@string/stats"
+        android:textStyle="bold"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="30dp">
+
+        <!-- Encabezado de la tabla -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border_table" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/title_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Item"
+                    android:textColor="#FF5A5A" />
+
+                <TextView
+                    style="@style/title_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="Consumo Último Mes"
+                    android:textColor="#FF5A5A"/>
+
+                <TextView
+                    style="@style/title_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Promedio"
+                    android:textColor="#FF5A5A"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Datos de la tabla -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_table">
+
+            <!-- Fila para Agua -->
+            <TableRow>
+
+                <TextView
+                    style="@style/title_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Agua"
+                    android:textColor="@color/water_color"/>
+
+                <TextView
+                    style="@style/simple_table_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="1000 litros" />
+
+                <TextView
+                    style="@style/simple_table_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="800 litros" />
+            </TableRow>
+
+            <!-- Fila para Abonos -->
+            <TableRow>
+                <TextView
+                    style="@style/title_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Abonos"
+                    android:textColor="@color/fertilizer_color" />
+
+                <TextView
+                    style="@style/simple_table_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="5 kg"/>
+
+                <TextView
+                    style="@style/simple_table_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="4 kg"/>
+            </TableRow>
+
+            <!-- Fila para Energía -->
+            <TableRow>
+                <TextView
+                    style="@style/title_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Energía"
+                    android:textColor="@color/energy_color" />
+
+                <TextView
+                    style="@style/simple_table_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="150 kWh" />
+
+                <TextView
+                    style="@style/simple_table_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="120 kWh" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/design_default_color_background"
+        android:elevation="7dp"
+        app:itemBackground="@color/stats_bar_bg"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GreenGarden" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.GreenGarden" parent="Base.Theme.GreenGarden" />
+    <style name="field_form">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="button_form">
+        <item name="backgroundTint">@color/app_purple_1</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="link_form">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/design_default_color_secondary_variant</item>
+        <item name="fontFamily">@font/lato_light_italic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="label_home">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="title_table">
+        <item name="android:padding">4dp</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="simple_table_field">
+        <item name="android:padding">4dp</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="label_cons_form">
+        <item name="android:padding">4dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@color/app_purple_2</item>
+    </style>
+    <style name="input_cons_form">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+</resources>

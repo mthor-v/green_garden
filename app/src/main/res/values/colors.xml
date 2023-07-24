@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_strong">#0B2A2B</color>
+    <color name="app_blue">#010029</color>
+    <color name="app_purple_1">#7F5360</color>
+    <color name="app_purple_2">#523340</color>
+    <color name="stats_bar_bg">#FF5A5A</color>
+    <color name="tips_bar_bg">#FDAA2D</color>
+    <color name="categories_bar_bg">#8D9CA8</color>
+    <color name="water_color">#78D2FA</color>
+    <color name="fertilizer_color">#D2B505</color>
+    <color name="energy_color">#A5DC69</color>
+</resources>
