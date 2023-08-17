@@ -12,6 +12,7 @@
         <item name="fontFamily">@font/lato</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/app_purple_1</item>
     </style>
     <style name="button_form">
         <item name="backgroundTint">@color/app_purple_1</item>
@@ -31,6 +32,7 @@
         <item name="android:textSize">20sp</item>
     </style>
     <style name="title_table">
+        <item name="android:layout_width">117dp</item>
         <item name="android:padding">4dp</item>
         <item name="fontFamily">@font/lato</item>
         <item name="android:textStyle">bold</item>
@@ -41,7 +43,11 @@
         <item name="android:padding">4dp</item>
         <item name="fontFamily">@font/montserrat</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:gravity">center</item>
+    </style>
+    <style name="empty_table">
+        <item name="android:text">@string/empty_message</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">3dp</item>
     </style>
     <style name="label_cons_form">
         <item name="android:padding">4dp</item>
@@ -54,5 +60,6 @@
     <style name="input_cons_form">
         <item name="fontFamily">@font/lato</item>
         <item name="android:textSize">19dp</item>
+        <item name="android:textColorHint">@color/app_purple_1</item>
     </style>
 </resources>

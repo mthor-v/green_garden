@@ -1,22 +1,18 @@
-package com.mthor.greengarden;
+package com.mthor.greengarden.activities;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.nio.file.attribute.FileTime;
+import com.mthor.greengarden.R;
+import com.mthor.greengarden.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity {
 
+    ActivityHomeBinding binding;
     ImageButton ibCategories;
     ImageButton ibStats;
     ImageButton ibTips;
@@ -25,32 +21,24 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        binding = ActivityHomeBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        ibCategories = findViewById(R.id.btCategories);
-        ibStats = findViewById(R.id.btStats);
-        ibTips = findViewById(R.id.btTips);
-        navigation = findViewById(R.id.bottomNavigationView);
+        ibCategories = binding.btCategories;
+        ibStats = binding.btStats;
+        ibTips = binding.btTips;
+        navigation = binding.bottomNavigationView;
 
         Intent categories = new Intent(this, CategoriesActivity.class);
         Intent stats = new Intent(this, StatsActivity.class);
         Intent tips = new Intent(this, TipsActivity.class);
         Intent login = new Intent(this, LoginActivity.class);
 
-        ibCategories.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { startActivity(categories); }
-        });
+        ibCategories.setOnClickListener(view -> startActivity(categories));
 
-        ibStats.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { startActivity(stats); }
-        });
+        ibStats.setOnClickListener(view -> startActivity(stats));
 
-        ibTips.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { startActivity(tips); }
-        });
+        ibTips.setOnClickListener(view -> startActivity(tips));
 
         navigation.setOnItemSelectedListener(
                 item -> {

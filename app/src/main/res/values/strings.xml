@@ -26,4 +26,19 @@
     <!--Register Categories-->
     <string name="cons_register">Registrar consumos</string>
     <string name="water_reg_message">Registra tus consumos de agua llenando el siguiente formulario.</string>
+    <string name="fertilizer_reg_message">Registra tus consumos de fertilizantes llenando el siguiente formulario.</string>
+    <string name="energy_reg_message">Registra tus consumos de energía llenando el siguiente formulario.</string>
+    <string name="save_success">¡Información almacenada con éxito!</string>
+    <string name="empty_fields">¡Todos los campos deben estár diligenciados!</string>
+    <string name="value">Valor:</string>
+    <string name="month">Mes:</string>
+    <string name="amount">Cant.:</string>
+    <string name="liters">Litros de agua</string>
+    <string name="kilos">Cantidad en kilos</string>
+    <string name="kwats">Cantidad en Kilovatios</string>
+    <!-- Stats -->
+    <string name="empty_message">No hay registros disponibles</string>
+    <string name="average">Promedio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categories_nav"
+    app:startDestination="@id/categoriesPanelFragment">
+
+    <fragment
+        android:id="@+id/categoriesPanelFragment"
+        android:name="com.mthor.greengarden.fragments.CategoriesPanelFragment"
+        android:label="fragment_categories_panel"
+        tools:layout="@layout/fragment_categories_panel" >
+        <action
+            android:id="@+id/action_categoriesPanelFragment_to_waterRegisterFragment"
+            app:destination="@id/waterRegisterFragment" />
+        <action
+            android:id="@+id/action_categoriesPanelFragment_to_fertilizerRegisterFragment"
+            app:destination="@id/fertilizerRegisterFragment" />
+        <action
+            android:id="@+id/action_categoriesPanelFragment_to_energyRegisterFragment"
+            app:destination="@id/energyRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterRegisterFragment"
+        android:name="com.mthor.greengarden.fragments.WaterRegisterFragment"
+        android:label="fragment_water_register"
+        tools:layout="@layout/fragment_water_register" >
+        <action
+            android:id="@+id/action_waterRegisterFragment_to_categoriesPanelFragment"
+            app:destination="@id/categoriesPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fertilizerRegisterFragment"
+        android:name="com.mthor.greengarden.fragments.FertilizerRegisterFragment"
+        android:label="fragment_fertilizer_register"
+        tools:layout="@layout/fragment_fertilizer_register" >
+        <action
+            android:id="@+id/action_fertilizerRegisterFragment_to_categoriesPanelFragment"
+            app:destination="@id/categoriesPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/energyRegisterFragment"
+        android:name="com.mthor.greengarden.fragments.EnergyRegisterFragment"
+        android:label="fragment_energy_register"
+        tools:layout="@layout/fragment_energy_register" >
+        <action
+            android:id="@+id/action_energyRegisterFragment_to_categoriesPanelFragment"
+            app:destination="@id/categoriesPanelFragment" />
+    </fragment>
+</navigation>

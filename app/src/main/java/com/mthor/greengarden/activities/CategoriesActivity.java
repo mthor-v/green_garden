@@ -1,22 +1,28 @@
-package com.mthor.greengarden;
+package com.mthor.greengarden.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.mthor.greengarden.R;
 
-public class StatsActivity extends AppCompatActivity {
+import com.mthor.greengarden.databinding.ActivityCategoriesBinding;
 
+public class CategoriesActivity extends AppCompatActivity {
+
+    ActivityCategoriesBinding binding;
     BottomNavigationView navigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
+        binding = ActivityCategoriesBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        navigation = findViewById(R.id.bottomNavigationView);
+        navigation = binding.bottomNavigationView;
 
         Intent home = new Intent(this, HomeActivity.class);
         Intent login = new Intent(this, LoginActivity.class);
@@ -29,5 +35,4 @@ public class StatsActivity extends AppCompatActivity {
                 }
         );
     }
-
 }
