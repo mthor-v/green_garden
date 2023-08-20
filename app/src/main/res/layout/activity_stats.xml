@@ -8,74 +8,196 @@
     android:orientation="vertical"
     tools:context=".activities.StatsActivity">
 
-    <ImageView
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/analytics" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato"
-        android:text="@string/stats"
-        android:textSize="28sp"
-        android:textStyle="bold" />
-
     <LinearLayout
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingTop="30dp">
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/analytics" />
 
         <TextView
-            style="@style/title_table"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/water"
-            android:textColor="@color/water_color" />
+            android:fontFamily="@font/lato"
+            android:text="@string/stats"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-        <!-- Table header -->
-        <TableLayout
-            android:id="@+id/tlWaterStatsContent"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/border_table">
+            android:orientation="vertical"
+            android:paddingTop="10dp">
 
-            <TableRow>
+            <TextView
+                style="@style/title_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/water"
+                android:textColor="@color/water_color" />
 
-                <TextView
-                    style="@style/title_table"
-                    android:text="Mes"
-                    android:textColor="#FF5A5A" />
+            <!-- Table header -->
+            <TableLayout
+                android:id="@+id/tlWaterStatsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border_table">
 
-                <TextView
-                    style="@style/title_table"
-                    android:text="Consumo"
-                    android:textColor="#FF5A5A" />
+                <TableRow>
 
-                <TextView
-                    style="@style/title_table"
-                    android:text="Precio"
-                    android:textColor="#FF5A5A" />
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Mes"
+                        android:textColor="#FF5A5A" />
 
-            </TableRow>
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Consumo"
+                        android:textColor="#FF5A5A" />
 
-        </TableLayout>
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Precio"
+                        android:textColor="#FF5A5A" />
 
-        <!-- Water table -->
-        <!--
-        <TableLayout
-            android:id="@+id/tlWaterStatsContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                </TableRow>
 
-        </TableLayout> -->
+            </TableLayout>
 
+            <Button
+                android:id="@+id/btWipeWater"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/wipe_data"
+                android:textSize="13sp"
+                android:backgroundTint="@color/app_purple_2"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/title_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/fertilizer"
+                android:textColor="@color/fertilizer_color" />
+
+            <!-- Table header -->
+            <TableLayout
+                android:id="@+id/tlFertilizerStatsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border_table">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Mes"
+                        android:textColor="#FF5A5A" />
+
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Consumo"
+                        android:textColor="#FF5A5A" />
+
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Precio"
+                        android:textColor="#FF5A5A" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btWipeFertilizer"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/wipe_data"
+                android:textSize="13sp"
+                android:backgroundTint="@color/app_purple_2"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/title_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/energy"
+                android:textColor="@color/energy_color" />
+
+            <!-- Table header -->
+            <TableLayout
+                android:id="@+id/tlEnergyStatsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border_table">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Mes"
+                        android:textColor="#FF5A5A" />
+
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Consumo"
+                        android:textColor="#FF5A5A" />
+
+                    <TextView
+                        style="@style/title_table"
+                        android:text="Precio"
+                        android:textColor="#FF5A5A" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btWipeEnergy"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/wipe_data"
+                android:textSize="13sp"
+                android:backgroundTint="@color/app_purple_2"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/errorLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ErrorLog"/>
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

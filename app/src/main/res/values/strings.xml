@@ -14,6 +14,9 @@
     <string name="full_name">Nombre y apellido</string>
     <string name="city">Ciudad</string>
     <string name="signup">Registrarse</string>
+    <string name="user_done">¡Usuario creado con éxito!</string>
+    <string name="user_exists">Usuario con e-mail ya está registrado en la aplicación, inicia sesión.</string>
+    <string name="wrong_user">Las credenciales ingresadas son incorrectas</string>
     <!--Navigation menu-->
     <string name="menu_home">Home</string>
     <string name="menu_user">Usuario</string>
@@ -39,6 +42,9 @@
     <!-- Stats -->
     <string name="empty_message">No hay registros disponibles</string>
     <string name="average">Promedio</string>
+    <string name="wipe_data">Limpiar datos</string>
+    <string name="alert_subtitle">Confirmar Borrado</string>
+    <string name="alert_message">¿Estás seguro de que deseas borrar los datos?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
